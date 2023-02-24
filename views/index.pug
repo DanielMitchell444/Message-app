@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= "Message Board"
+  p= "Welcome to the message board"
+
+  ul 
+
+  each message in messages
+
+  li= message.text
+
+
+    ul 
+
+  each message in messages
+
+  li= message.text 
