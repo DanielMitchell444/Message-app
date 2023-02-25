@@ -1,11 +1,11 @@
 extends layout
 
 block content
-  h1= "Message Board"
-  p= "Welcome to the message board"
 
 
+ h1=title
+  ul
+    each message in messages
+      li= message.text
 
-each message in messages
-
-li= message.text;
+  <a href="/new"><button>Add new message</button></a>
